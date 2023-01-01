@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="add-word-form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add-word-form.Designer.cs">
+      <DependentUpon>add-word-form.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataClasses1.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -65,6 +71,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="add-word-form.resx">
+      <DependentUpon>add-word-form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="main-form.resx">
       <DependentUpon>main-form.cs</DependentUpon>
     </EmbeddedResource>

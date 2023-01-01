@@ -8,3 +8,14 @@ D:\University\C# App\Dictionary-App\Dictionary-App\obj\Debug\Dictionary-App.cspr
 D:\University\C# App\Dictionary-App\Dictionary-App\obj\Debug\Dictionary-App.exe
 D:\University\C# App\Dictionary-App\Dictionary-App\obj\Debug\Dictionary-App.pdb
 D:\University\C# App\Dictionary-App\Dictionary-App\obj\Debug\Dictionary_App.mainForm.resources
+D:\University\C# App\CSharp-Dictionary-App\Dictionary-App\bin\Debug\Dictionary-App.exe.config
+D:\University\C# App\CSharp-Dictionary-App\Dictionary-App\bin\Debug\Dictionary-App.exe
+D:\University\C# App\CSharp-Dictionary-App\Dictionary-App\bin\Debug\Dictionary-App.pdb
+D:\University\C# App\CSharp-Dictionary-App\Dictionary-App\obj\Debug\Dictionary-App.csprojResolveAssemblyReference.cache
+D:\University\C# App\CSharp-Dictionary-App\Dictionary-App\obj\Debug\Dictionary_App.add_word_form.resources
+D:\University\C# App\CSharp-Dictionary-App\Dictionary-App\obj\Debug\Dictionary_App.mainForm.resources
+D:\University\C# App\CSharp-Dictionary-App\Dictionary-App\obj\Debug\Dictionary_App.welcome.resources
+D:\University\C# App\CSharp-Dictionary-App\Dictionary-App\obj\Debug\Dictionary_App.Properties.Resources.resources
+D:\University\C# App\CSharp-Dictionary-App\Dictionary-App\obj\Debug\Dictionary-App.csproj.GenerateResource.Cache
+D:\University\C# App\CSharp-Dictionary-App\Dictionary-App\obj\Debug\Dictionary-App.exe
+D:\University\C# App\CSharp-Dictionary-App\Dictionary-App\obj\Debug\Dictionary-App.pdb

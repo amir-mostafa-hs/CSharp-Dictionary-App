@@ -57,6 +57,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataClasses1.dbml</DependentUpon>
     </Compile>
+    <Compile Include="edit-word-form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit-word-form.Designer.cs">
+      <DependentUpon>edit-word-form.cs</DependentUpon>
+    </Compile>
     <Compile Include="main-form.cs">
       <SubType>Form</SubType>
     </Compile>

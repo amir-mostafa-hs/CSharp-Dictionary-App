@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Dictionary_App
 {
-    public partial class sheatch_word_form : Form
+    public partial class search_word_form : Form
     {
-        public sheatch_word_form()
+        public search_word_form()
         {
             InitializeComponent();
         }

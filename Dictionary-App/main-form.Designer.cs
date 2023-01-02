@@ -31,13 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainForm));
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.tsbAddNewWord = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
+            this.tsbEditWord = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
+            this.tsbSearchWord = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.tsbDeleteWord = new System.Windows.Forms.ToolStripButton();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
@@ -51,13 +51,13 @@
             this.bindingNavigator1.DeleteItem = null;
             this.bindingNavigator1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
+            this.tsbAddNewWord,
             this.toolStripSeparator1,
-            this.toolStripButton2,
+            this.tsbEditWord,
             this.toolStripSeparator2,
-            this.toolStripButton3,
+            this.tsbSearchWord,
             this.toolStripSeparator3,
-            this.toolStripButton4});
+            this.tsbDeleteWord});
             this.bindingNavigator1.Location = new System.Drawing.Point(0, 0);
             this.bindingNavigator1.MoveFirstItem = null;
             this.bindingNavigator1.MoveLastItem = null;
@@ -65,57 +65,59 @@
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(582, 32);
+            this.bindingNavigator1.Size = new System.Drawing.Size(582, 27);
             this.bindingNavigator1.TabIndex = 0;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
-            // toolStripButton1
+            // tsbAddNewWord
             // 
-            this.toolStripButton1.Image = global::Dictionary_App.Properties.Resources.add;
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(140, 29);
-            this.toolStripButton1.Text = "Add New Word";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.tsbAddNewWord.Image = global::Dictionary_App.Properties.Resources.add;
+            this.tsbAddNewWord.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbAddNewWord.Name = "tsbAddNewWord";
+            this.tsbAddNewWord.Size = new System.Drawing.Size(135, 24);
+            this.tsbAddNewWord.Text = "Add New Word";
+            this.tsbAddNewWord.Click += new System.EventHandler(this.tsbAddNewWord_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 32);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
-            // toolStripButton2
+            // tsbEditWord
             // 
-            this.toolStripButton2.Image = global::Dictionary_App.Properties.Resources.edit;
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(99, 29);
-            this.toolStripButton2.Text = "Edit Word";
+            this.tsbEditWord.Image = global::Dictionary_App.Properties.Resources.edit;
+            this.tsbEditWord.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbEditWord.Name = "tsbEditWord";
+            this.tsbEditWord.Size = new System.Drawing.Size(99, 24);
+            this.tsbEditWord.Text = "Edit Word";
+            this.tsbEditWord.Click += new System.EventHandler(this.tsbEditWord_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 32);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
-            // toolStripButton3
+            // tsbSearchWord
             // 
-            this.toolStripButton3.Image = global::Dictionary_App.Properties.Resources.search;
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(117, 29);
-            this.toolStripButton3.Text = "Search Word";
+            this.tsbSearchWord.Image = global::Dictionary_App.Properties.Resources.search;
+            this.tsbSearchWord.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbSearchWord.Name = "tsbSearchWord";
+            this.tsbSearchWord.Size = new System.Drawing.Size(117, 24);
+            this.tsbSearchWord.Text = "Search Word";
+            this.tsbSearchWord.Click += new System.EventHandler(this.tsbSearchWord_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 32);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 27);
             // 
-            // toolStripButton4
+            // tsbDeleteWord
             // 
-            this.toolStripButton4.Image = global::Dictionary_App.Properties.Resources.delete;
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Size = new System.Drawing.Size(117, 29);
-            this.toolStripButton4.Text = "Delete Word";
+            this.tsbDeleteWord.Image = global::Dictionary_App.Properties.Resources.delete;
+            this.tsbDeleteWord.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsbDeleteWord.Name = "tsbDeleteWord";
+            this.tsbDeleteWord.Size = new System.Drawing.Size(117, 24);
+            this.tsbDeleteWord.Text = "Delete Word";
             // 
             // dataGridView1
             // 
@@ -148,13 +150,13 @@
         #endregion
 
         private System.Windows.Forms.BindingNavigator bindingNavigator1;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton tsbAddNewWord;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.ToolStripButton toolStripButton2;
+        private System.Windows.Forms.ToolStripButton tsbEditWord;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripButton toolStripButton3;
+        private System.Windows.Forms.ToolStripButton tsbSearchWord;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-        private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.ToolStripButton tsbDeleteWord;
         private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

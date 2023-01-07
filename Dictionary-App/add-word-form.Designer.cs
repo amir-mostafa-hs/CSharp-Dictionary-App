@@ -200,6 +200,7 @@
             // 
             // picBoxPronounce
             // 
+            this.picBoxPronounce.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picBoxPronounce.Location = new System.Drawing.Point(16, 18);
             this.picBoxPronounce.Margin = new System.Windows.Forms.Padding(2);
             this.picBoxPronounce.Name = "picBoxPronounce";
@@ -231,8 +232,10 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
             this.Name = "add_word_form";
             this.Text = "Add New Word";
             this.groupBox1.ResumeLayout(false);

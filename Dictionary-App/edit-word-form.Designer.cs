@@ -56,60 +56,68 @@
             this.groupBox2.Controls.Add(this.txtPronounce);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Location = new System.Drawing.Point(392, 26);
+            this.groupBox2.Location = new System.Drawing.Point(294, 21);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(470, 170);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Size = new System.Drawing.Size(352, 138);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Other Options";
             // 
             // btnAddPronouncePic
             // 
-            this.btnAddPronouncePic.Location = new System.Drawing.Point(334, 112);
+            this.btnAddPronouncePic.Location = new System.Drawing.Point(250, 91);
+            this.btnAddPronouncePic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAddPronouncePic.Name = "btnAddPronouncePic";
-            this.btnAddPronouncePic.Size = new System.Drawing.Size(100, 25);
+            this.btnAddPronouncePic.Size = new System.Drawing.Size(75, 20);
             this.btnAddPronouncePic.TabIndex = 6;
             this.btnAddPronouncePic.Text = "Add Image";
             this.btnAddPronouncePic.UseVisualStyleBackColor = true;
             // 
             // picBoxPronounce
             // 
-            this.picBoxPronounce.Location = new System.Drawing.Point(334, 32);
+            this.picBoxPronounce.Location = new System.Drawing.Point(250, 26);
+            this.picBoxPronounce.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.picBoxPronounce.Name = "picBoxPronounce";
-            this.picBoxPronounce.Size = new System.Drawing.Size(100, 60);
+            this.picBoxPronounce.Size = new System.Drawing.Size(75, 49);
             this.picBoxPronounce.TabIndex = 5;
             this.picBoxPronounce.TabStop = false;
             // 
             // txtDescriptions
             // 
-            this.txtDescriptions.Location = new System.Drawing.Point(148, 34);
+            this.txtDescriptions.Location = new System.Drawing.Point(111, 28);
+            this.txtDescriptions.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDescriptions.Name = "txtDescriptions";
-            this.txtDescriptions.Size = new System.Drawing.Size(157, 60);
+            this.txtDescriptions.Size = new System.Drawing.Size(119, 50);
             this.txtDescriptions.TabIndex = 4;
             this.txtDescriptions.Text = "";
             // 
             // txtPronounce
             // 
-            this.txtPronounce.Location = new System.Drawing.Point(148, 113);
+            this.txtPronounce.Location = new System.Drawing.Point(111, 92);
+            this.txtPronounce.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPronounce.Name = "txtPronounce";
-            this.txtPronounce.Size = new System.Drawing.Size(157, 22);
+            this.txtPronounce.Size = new System.Drawing.Size(119, 20);
             this.txtPronounce.TabIndex = 3;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(17, 116);
+            this.label5.Location = new System.Drawing.Point(13, 94);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 17);
+            this.label5.Size = new System.Drawing.Size(62, 13);
             this.label5.TabIndex = 2;
             this.label5.Text = "Pronounce:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(17, 37);
+            this.label6.Location = new System.Drawing.Point(13, 30);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 17);
+            this.label6.Size = new System.Drawing.Size(68, 13);
             this.label6.TabIndex = 0;
             this.label6.Text = "Descriptions:";
             // 
@@ -121,70 +129,80 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtWord);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(21, 26);
+            this.groupBox1.Location = new System.Drawing.Point(16, 21);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(331, 170);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(248, 138);
             this.groupBox1.TabIndex = 7;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Word";
             // 
             // txtArabicTranslate
             // 
-            this.txtArabicTranslate.Location = new System.Drawing.Point(148, 113);
+            this.txtArabicTranslate.Location = new System.Drawing.Point(111, 92);
+            this.txtArabicTranslate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtArabicTranslate.Name = "txtArabicTranslate";
-            this.txtArabicTranslate.Size = new System.Drawing.Size(157, 22);
+            this.txtArabicTranslate.Size = new System.Drawing.Size(119, 20);
             this.txtArabicTranslate.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 116);
+            this.label3.Location = new System.Drawing.Point(13, 94);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 17);
+            this.label3.Size = new System.Drawing.Size(87, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Arabic Translate:";
             // 
             // txtPersianTranslate
             // 
-            this.txtPersianTranslate.Location = new System.Drawing.Point(148, 72);
+            this.txtPersianTranslate.Location = new System.Drawing.Point(111, 58);
+            this.txtPersianTranslate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPersianTranslate.Name = "txtPersianTranslate";
-            this.txtPersianTranslate.Size = new System.Drawing.Size(157, 22);
+            this.txtPersianTranslate.Size = new System.Drawing.Size(119, 20);
             this.txtPersianTranslate.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 75);
+            this.label2.Location = new System.Drawing.Point(13, 61);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 17);
+            this.label2.Size = new System.Drawing.Size(92, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Persian Translate:";
             // 
             // txtWord
             // 
-            this.txtWord.Location = new System.Drawing.Point(148, 34);
+            this.txtWord.Location = new System.Drawing.Point(111, 28);
+            this.txtWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtWord.Name = "txtWord";
-            this.txtWord.Size = new System.Drawing.Size(157, 22);
+            this.txtWord.Size = new System.Drawing.Size(119, 20);
             this.txtWord.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 37);
+            this.label1.Location = new System.Drawing.Point(13, 30);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Word:";
             // 
             // edit_word_form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 223);
+            this.ClientSize = new System.Drawing.Size(662, 181);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "edit_word_form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Edit Word";
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();

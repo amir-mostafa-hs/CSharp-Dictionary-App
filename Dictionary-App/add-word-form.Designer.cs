@@ -42,9 +42,9 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnSubmitWord = new System.Windows.Forms.Button();
             this.btnAddPronouncePic = new System.Windows.Forms.Button();
             this.picBoxPronounce = new System.Windows.Forms.PictureBox();
-            this.btnSubmitWord = new System.Windows.Forms.Button();
             this.openFileDialogImage = new System.Windows.Forms.OpenFileDialog();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -61,9 +61,9 @@
             this.groupBox1.Controls.Add(this.txtWord);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(18, 12);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(248, 138);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
@@ -72,7 +72,7 @@
             // txtArabicTranslate
             // 
             this.txtArabicTranslate.Location = new System.Drawing.Point(111, 92);
-            this.txtArabicTranslate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtArabicTranslate.Margin = new System.Windows.Forms.Padding(2);
             this.txtArabicTranslate.Name = "txtArabicTranslate";
             this.txtArabicTranslate.Size = new System.Drawing.Size(119, 20);
             this.txtArabicTranslate.TabIndex = 5;
@@ -90,7 +90,7 @@
             // txtPersianTranslate
             // 
             this.txtPersianTranslate.Location = new System.Drawing.Point(111, 58);
-            this.txtPersianTranslate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPersianTranslate.Margin = new System.Windows.Forms.Padding(2);
             this.txtPersianTranslate.Name = "txtPersianTranslate";
             this.txtPersianTranslate.Size = new System.Drawing.Size(119, 20);
             this.txtPersianTranslate.TabIndex = 3;
@@ -108,7 +108,7 @@
             // txtWord
             // 
             this.txtWord.Location = new System.Drawing.Point(111, 28);
-            this.txtWord.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtWord.Margin = new System.Windows.Forms.Padding(2);
             this.txtWord.Name = "txtWord";
             this.txtWord.Size = new System.Drawing.Size(119, 20);
             this.txtWord.TabIndex = 1;
@@ -130,9 +130,9 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Location = new System.Drawing.Point(18, 158);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(248, 138);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
@@ -141,7 +141,7 @@
             // txtDescriptions
             // 
             this.txtDescriptions.Location = new System.Drawing.Point(111, 28);
-            this.txtDescriptions.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDescriptions.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescriptions.Name = "txtDescriptions";
             this.txtDescriptions.Size = new System.Drawing.Size(119, 50);
             this.txtDescriptions.TabIndex = 4;
@@ -150,7 +150,7 @@
             // txtPronounce
             // 
             this.txtPronounce.Location = new System.Drawing.Point(111, 92);
-            this.txtPronounce.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPronounce.Margin = new System.Windows.Forms.Padding(2);
             this.txtPronounce.Name = "txtPronounce";
             this.txtPronounce.Size = new System.Drawing.Size(119, 20);
             this.txtPronounce.TabIndex = 3;
@@ -187,6 +187,17 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Image";
             // 
+            // btnSubmitWord
+            // 
+            this.btnSubmitWord.Location = new System.Drawing.Point(149, 79);
+            this.btnSubmitWord.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSubmitWord.Name = "btnSubmitWord";
+            this.btnSubmitWord.Size = new System.Drawing.Size(75, 25);
+            this.btnSubmitWord.TabIndex = 9;
+            this.btnSubmitWord.Text = "Submit";
+            this.btnSubmitWord.UseVisualStyleBackColor = true;
+            this.btnSubmitWord.Click += new System.EventHandler(this.btnSubmitWord_Click);
+            // 
             // btnAddPronouncePic
             // 
             this.btnAddPronouncePic.Location = new System.Drawing.Point(149, 41);
@@ -209,17 +220,6 @@
             this.picBoxPronounce.TabIndex = 7;
             this.picBoxPronounce.TabStop = false;
             // 
-            // btnSubmitWord
-            // 
-            this.btnSubmitWord.Location = new System.Drawing.Point(149, 79);
-            this.btnSubmitWord.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSubmitWord.Name = "btnSubmitWord";
-            this.btnSubmitWord.Size = new System.Drawing.Size(75, 25);
-            this.btnSubmitWord.TabIndex = 9;
-            this.btnSubmitWord.Text = "Submit";
-            this.btnSubmitWord.UseVisualStyleBackColor = true;
-            this.btnSubmitWord.Click += new System.EventHandler(this.btnSubmitWord_Click);
-            // 
             // openFileDialogImage
             // 
             this.openFileDialogImage.FileName = "openFileDialog1";
@@ -234,9 +234,10 @@
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "add_word_form";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Add New Word";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

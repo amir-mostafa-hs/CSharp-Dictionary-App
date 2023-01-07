@@ -16,5 +16,10 @@ namespace Dictionary_App
         {
             InitializeComponent();
         }
+
+        private void btnSubmitWord_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

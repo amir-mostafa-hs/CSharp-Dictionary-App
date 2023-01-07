@@ -214,6 +214,7 @@
             this.btnSubmitWord.TabIndex = 9;
             this.btnSubmitWord.Text = "Submit";
             this.btnSubmitWord.UseVisualStyleBackColor = true;
+            this.btnSubmitWord.Click += new System.EventHandler(this.btnSubmitWord_Click);
             // 
             // add_word_form
             // 

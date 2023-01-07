@@ -52,10 +52,10 @@
     <Compile Include="add-word-form.Designer.cs">
       <DependentUpon>add-word-form.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataClasses1.designer.cs">
+    <Compile Include="dbClassWordTable.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataClasses1.dbml</DependentUpon>
+      <DependentUpon>dbClassWordTable.dbml</DependentUpon>
     </Compile>
     <Compile Include="edit-word-form.cs">
       <SubType>Form</SubType>
@@ -108,13 +108,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="DataClasses1.dbml">
+    <None Include="dbClassWordTable.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
-      <LastGenOutput>DataClasses1.designer.cs</LastGenOutput>
+      <LastGenOutput>dbClassWordTable.designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="DataClasses1.dbml.layout">
-      <DependentUpon>DataClasses1.dbml</DependentUpon>
+    <None Include="dbClassWordTable.dbml.layout">
+      <DependentUpon>dbClassWordTable.dbml</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

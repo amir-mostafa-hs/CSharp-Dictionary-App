@@ -45,6 +45,7 @@
             this.btnAddPronouncePic = new System.Windows.Forms.Button();
             this.picBoxPronounce = new System.Windows.Forms.PictureBox();
             this.btnSubmitWord = new System.Windows.Forms.Button();
+            this.openFileDialogImage = new System.Windows.Forms.OpenFileDialog();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -59,7 +60,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.txtWord);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(18, 20);
+            this.groupBox1.Location = new System.Drawing.Point(18, 12);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -128,7 +129,7 @@
             this.groupBox2.Controls.Add(this.txtPronounce);
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Location = new System.Drawing.Point(18, 176);
+            this.groupBox2.Location = new System.Drawing.Point(18, 158);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
@@ -179,48 +180,54 @@
             this.groupBox3.Controls.Add(this.btnSubmitWord);
             this.groupBox3.Controls.Add(this.btnAddPronouncePic);
             this.groupBox3.Controls.Add(this.picBoxPronounce);
-            this.groupBox3.Location = new System.Drawing.Point(18, 331);
+            this.groupBox3.Location = new System.Drawing.Point(18, 304);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(248, 100);
+            this.groupBox3.Size = new System.Drawing.Size(248, 145);
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Image";
             // 
             // btnAddPronouncePic
             // 
-            this.btnAddPronouncePic.Location = new System.Drawing.Point(155, 21);
+            this.btnAddPronouncePic.Location = new System.Drawing.Point(149, 41);
             this.btnAddPronouncePic.Margin = new System.Windows.Forms.Padding(2);
             this.btnAddPronouncePic.Name = "btnAddPronouncePic";
-            this.btnAddPronouncePic.Size = new System.Drawing.Size(75, 20);
+            this.btnAddPronouncePic.Size = new System.Drawing.Size(75, 25);
             this.btnAddPronouncePic.TabIndex = 8;
             this.btnAddPronouncePic.Text = "Add Image";
             this.btnAddPronouncePic.UseVisualStyleBackColor = true;
+            this.btnAddPronouncePic.Click += new System.EventHandler(this.btnAddPronouncePic_Click);
             // 
             // picBoxPronounce
             // 
             this.picBoxPronounce.Location = new System.Drawing.Point(16, 18);
             this.picBoxPronounce.Margin = new System.Windows.Forms.Padding(2);
             this.picBoxPronounce.Name = "picBoxPronounce";
-            this.picBoxPronounce.Size = new System.Drawing.Size(106, 68);
+            this.picBoxPronounce.Size = new System.Drawing.Size(106, 115);
+            this.picBoxPronounce.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxPronounce.TabIndex = 7;
             this.picBoxPronounce.TabStop = false;
             // 
             // btnSubmitWord
             // 
-            this.btnSubmitWord.Location = new System.Drawing.Point(155, 59);
+            this.btnSubmitWord.Location = new System.Drawing.Point(149, 79);
             this.btnSubmitWord.Margin = new System.Windows.Forms.Padding(2);
             this.btnSubmitWord.Name = "btnSubmitWord";
-            this.btnSubmitWord.Size = new System.Drawing.Size(75, 20);
+            this.btnSubmitWord.Size = new System.Drawing.Size(75, 25);
             this.btnSubmitWord.TabIndex = 9;
             this.btnSubmitWord.Text = "Submit";
             this.btnSubmitWord.UseVisualStyleBackColor = true;
             this.btnSubmitWord.Click += new System.EventHandler(this.btnSubmitWord_Click);
             // 
+            // openFileDialogImage
+            // 
+            this.openFileDialogImage.FileName = "openFileDialog1";
+            // 
             // add_word_form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 451);
+            this.ClientSize = new System.Drawing.Size(284, 461);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -256,5 +263,6 @@
         private System.Windows.Forms.Button btnSubmitWord;
         private System.Windows.Forms.Button btnAddPronouncePic;
         private System.Windows.Forms.PictureBox picBoxPronounce;
+        private System.Windows.Forms.OpenFileDialog openFileDialogImage;
     }
 }

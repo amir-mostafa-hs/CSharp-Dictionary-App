@@ -19,7 +19,40 @@ namespace Dictionary_App
 
         private void btnSubmitWord_Click(object sender, EventArgs e)
         {
-            dbClassWordTableDataContext wordTable = new dbClassWordTableDataContext();
+            DialogResult isAddWord =  MessageBox.Show("Are you sure to add this data?","submit new word data",MessageBoxButtons.YesNo,MessageBoxIcon.Warning);
+
+            if (isAddWord == DialogResult.Yes)
+            {
+                dbClassWordTableDataContext wordDatabase = new dbClassWordTableDataContext();
+                WordsTable wordTable = new WordsTable();
+
+                wordTable.Word = txtWord.Text;
+                wordTable.PersianTranslate = txtPersianTranslate.Text;
+                wordTable.ArabicTranslate = txtArabicTranslate.Text;
+                wordTable.Pronounce = txtPronounce.Text;
+                wordTable.Descriptions = txtDescriptions.Text;
+                wordTable.PronounceImage = openFileDialogImage.FileName;
+
+                try
+                {
+                    wordDatabase.WordsTables.InsertOnSubmit(wordTable);
+                    wordDatabase.SubmitChanges();
+                    MessageBox.Show("Add new word is successfully", "Adding word result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch
+                {
+                    MessageBox.Show("There was a problem adding a new word", "Adding word result", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
+
+        private void btnAddPronouncePic_Click(object sender, EventArgs e)
+        {
+            openFileDialogImage.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.gif;*.tif;*.bmp;*.wmf";
+            if (openFileDialogImage.ShowDialog() == DialogResult.OK)
+            {
+                picBoxPronounce.Image = Image.FromFile(openFileDialogImage.FileName);
+            }
         }
     }
 }

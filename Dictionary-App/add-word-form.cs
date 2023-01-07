@@ -52,6 +52,7 @@ namespace Dictionary_App
                     txtArabicTranslate.Text = "";
                     txtPronounce.Text = "";
                     txtDescriptions.Text = "";
+                    picBoxPronounce.Image = null;
 
                     mainForm mainFrm = (mainForm)Application.OpenForms["mainForm"];
                     mainFrm.dataGvAllword.DataSource = wordDatabase.WordsTables;

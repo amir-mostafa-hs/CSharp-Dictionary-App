@@ -38,10 +38,10 @@
             this.tsbSearchWord = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.tsbDeleteWord = new System.Windows.Forms.ToolStripButton();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGvAllword = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGvAllword)).BeginInit();
             this.SuspendLayout();
             // 
             // bindingNavigator1
@@ -65,7 +65,7 @@
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(584, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(684, 27);
             this.bindingNavigator1.TabIndex = 0;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -119,34 +119,37 @@
             this.tsbDeleteWord.Size = new System.Drawing.Size(96, 24);
             this.tsbDeleteWord.Text = "Delete Word";
             // 
-            // dataGridView1
+            // dataGvAllword
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 27);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(584, 334);
-            this.dataGridView1.TabIndex = 1;
+            this.dataGvAllword.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGvAllword.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGvAllword.Location = new System.Drawing.Point(0, 27);
+            this.dataGvAllword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGvAllword.Name = "dataGvAllword";
+            this.dataGvAllword.ReadOnly = true;
+            this.dataGvAllword.RowTemplate.Height = 24;
+            this.dataGvAllword.Size = new System.Drawing.Size(684, 434);
+            this.dataGvAllword.TabIndex = 1;
             // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(584, 361);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(684, 461);
+            this.Controls.Add(this.dataGvAllword);
             this.Controls.Add(this.bindingNavigator1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.MaximizeBox = false;
             this.Name = "mainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dictionary App";
+            this.Load += new System.EventHandler(this.mainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGvAllword)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,6 +165,6 @@
         private System.Windows.Forms.ToolStripButton tsbSearchWord;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton tsbDeleteWord;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGvAllword;
     }
 }

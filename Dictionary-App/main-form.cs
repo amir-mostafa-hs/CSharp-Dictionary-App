@@ -12,6 +12,8 @@ namespace Dictionary_App
 {
     public partial class mainForm : Form
     {
+        dbClassWordTableDataContext wordDatabase = new dbClassWordTableDataContext();
+        WordsTable wordTable = new WordsTable();
         public mainForm()
         {
             InitializeComponent();
@@ -33,6 +35,11 @@ namespace Dictionary_App
         {
             Form searchWordFrm = new search_word_form();
             searchWordFrm.ShowDialog();
+        }
+
+        private void mainForm_Load(object sender, EventArgs e)
+        {
+            dataGvAllword.DataSource = wordDatabase.WordsTables;
         }
     }
 }

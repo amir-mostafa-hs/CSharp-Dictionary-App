@@ -65,7 +65,7 @@
             this.bindingNavigator1.MovePreviousItem = null;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = null;
-            this.bindingNavigator1.Size = new System.Drawing.Size(582, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(584, 27);
             this.bindingNavigator1.TabIndex = 0;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -74,7 +74,7 @@
             this.tsbAddNewWord.Image = global::Dictionary_App.Properties.Resources.add;
             this.tsbAddNewWord.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbAddNewWord.Name = "tsbAddNewWord";
-            this.tsbAddNewWord.Size = new System.Drawing.Size(135, 24);
+            this.tsbAddNewWord.Size = new System.Drawing.Size(112, 24);
             this.tsbAddNewWord.Text = "Add New Word";
             this.tsbAddNewWord.Click += new System.EventHandler(this.tsbAddNewWord_Click);
             // 
@@ -88,7 +88,7 @@
             this.tsbEditWord.Image = global::Dictionary_App.Properties.Resources.edit;
             this.tsbEditWord.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbEditWord.Name = "tsbEditWord";
-            this.tsbEditWord.Size = new System.Drawing.Size(99, 24);
+            this.tsbEditWord.Size = new System.Drawing.Size(83, 24);
             this.tsbEditWord.Text = "Edit Word";
             this.tsbEditWord.Click += new System.EventHandler(this.tsbEditWord_Click);
             // 
@@ -102,7 +102,7 @@
             this.tsbSearchWord.Image = global::Dictionary_App.Properties.Resources.search;
             this.tsbSearchWord.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbSearchWord.Name = "tsbSearchWord";
-            this.tsbSearchWord.Size = new System.Drawing.Size(117, 24);
+            this.tsbSearchWord.Size = new System.Drawing.Size(98, 24);
             this.tsbSearchWord.Text = "Search Word";
             this.tsbSearchWord.Click += new System.EventHandler(this.tsbSearchWord_Click);
             // 
@@ -116,26 +116,29 @@
             this.tsbDeleteWord.Image = global::Dictionary_App.Properties.Resources.delete;
             this.tsbDeleteWord.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsbDeleteWord.Name = "tsbDeleteWord";
-            this.tsbDeleteWord.Size = new System.Drawing.Size(117, 24);
+            this.tsbDeleteWord.Size = new System.Drawing.Size(96, 24);
             this.tsbDeleteWord.Text = "Delete Word";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 30);
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.Location = new System.Drawing.Point(0, 27);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(582, 321);
+            this.dataGridView1.Size = new System.Drawing.Size(584, 334);
             this.dataGridView1.TabIndex = 1;
             // 
             // mainForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(582, 353);
+            this.ClientSize = new System.Drawing.Size(584, 361);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bindingNavigator1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "mainForm";
             this.Text = "Dictionary App";
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();

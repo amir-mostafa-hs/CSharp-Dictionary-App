@@ -31,7 +31,15 @@ namespace Dictionary_App
                 wordTable.ArabicTranslate = txtArabicTranslate.Text;
                 wordTable.Pronounce = txtPronounce.Text;
                 wordTable.Descriptions = txtDescriptions.Text;
-                wordTable.PronounceImage = openFileDialogImage.FileName;
+
+                if (openFileDialogImage.FileName != "openFileDialog1")
+                {
+                    wordTable.PronounceImage = openFileDialogImage.FileName;
+                }
+                else
+                {
+                    wordTable.PronounceImage = null;
+                }
 
                 try
                 {

@@ -23,7 +23,7 @@ namespace Dictionary_App
 	
 	
 	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="Dictionary")]
-	public partial class DataClasses1DataContext : System.Data.Linq.DataContext
+	public partial class dbClassWordTableDataContext : System.Data.Linq.DataContext
 	{
 		
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
@@ -35,31 +35,31 @@ namespace Dictionary_App
     partial void DeleteWordsTable(WordsTable instance);
     #endregion
 		
-		public DataClasses1DataContext() : 
+		public dbClassWordTableDataContext() : 
 				base(global::Dictionary_App.Properties.Settings.Default.DictionaryConnectionString, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses1DataContext(string connection) : 
+		public dbClassWordTableDataContext(string connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses1DataContext(System.Data.IDbConnection connection) : 
+		public dbClassWordTableDataContext(System.Data.IDbConnection connection) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses1DataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public dbClassWordTableDataContext(string connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();
 		}
 		
-		public DataClasses1DataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
+		public dbClassWordTableDataContext(System.Data.IDbConnection connection, System.Data.Linq.Mapping.MappingSource mappingSource) : 
 				base(connection, mappingSource)
 		{
 			OnCreated();

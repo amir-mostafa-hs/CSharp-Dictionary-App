@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Dictionary" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Dictionary" Class="dbClassWordTableDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=AMIR-MOSTAFA-HS;Initial Catalog=Dictionary;Integrated Security=True" SettingsObjectName="Dictionary_App.Properties.Settings" SettingsPropertyName="DictionaryConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.WordsTable" Member="WordsTables">
     <Type Name="WordsTable">

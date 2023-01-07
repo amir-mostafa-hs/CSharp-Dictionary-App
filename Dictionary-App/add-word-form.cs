@@ -19,7 +19,7 @@ namespace Dictionary_App
 
         private void btnSubmitWord_Click(object sender, EventArgs e)
         {
-
+            dbClassWordTableDataContext wordTable = new dbClassWordTableDataContext();
         }
     }
 }

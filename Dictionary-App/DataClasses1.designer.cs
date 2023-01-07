@@ -22,6 +22,7 @@ namespace Dictionary_App
 	using System;
 	
 	
+	[global::System.Data.Linq.Mapping.DatabaseAttribute(Name="Dictionary")]
 	public partial class DataClasses1DataContext : System.Data.Linq.DataContext
 	{
 		
@@ -29,7 +30,16 @@ namespace Dictionary_App
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
+    partial void InsertWordsTable(WordsTable instance);
+    partial void UpdateWordsTable(WordsTable instance);
+    partial void DeleteWordsTable(WordsTable instance);
     #endregion
+		
+		public DataClasses1DataContext() : 
+				base(global::Dictionary_App.Properties.Settings.Default.DictionaryConnectionString, mappingSource)
+		{
+			OnCreated();
+		}
 		
 		public DataClasses1DataContext(string connection) : 
 				base(connection, mappingSource)
@@ -53,6 +63,220 @@ namespace Dictionary_App
 				base(connection, mappingSource)
 		{
 			OnCreated();
+		}
+		
+		public System.Data.Linq.Table<WordsTable> WordsTables
+		{
+			get
+			{
+				return this.GetTable<WordsTable>();
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.WordsTable")]
+	public partial class WordsTable : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _WordId;
+		
+		private string _Word;
+		
+		private string _PersianTranslate;
+		
+		private string _ArabicTranslate;
+		
+		private string _Pronounce;
+		
+		private string _PronounceImage;
+		
+		private string _Descriptions;
+		
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnWordIdChanging(int value);
+    partial void OnWordIdChanged();
+    partial void OnWordChanging(string value);
+    partial void OnWordChanged();
+    partial void OnPersianTranslateChanging(string value);
+    partial void OnPersianTranslateChanged();
+    partial void OnArabicTranslateChanging(string value);
+    partial void OnArabicTranslateChanged();
+    partial void OnPronounceChanging(string value);
+    partial void OnPronounceChanged();
+    partial void OnPronounceImageChanging(string value);
+    partial void OnPronounceImageChanged();
+    partial void OnDescriptionsChanging(string value);
+    partial void OnDescriptionsChanged();
+    #endregion
+		
+		public WordsTable()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_WordId", AutoSync=AutoSync.OnInsert, DbType="Int NOT NULL IDENTITY", IsPrimaryKey=true, IsDbGenerated=true)]
+		public int WordId
+		{
+			get
+			{
+				return this._WordId;
+			}
+			set
+			{
+				if ((this._WordId != value))
+				{
+					this.OnWordIdChanging(value);
+					this.SendPropertyChanging();
+					this._WordId = value;
+					this.SendPropertyChanged("WordId");
+					this.OnWordIdChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Word", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string Word
+		{
+			get
+			{
+				return this._Word;
+			}
+			set
+			{
+				if ((this._Word != value))
+				{
+					this.OnWordChanging(value);
+					this.SendPropertyChanging();
+					this._Word = value;
+					this.SendPropertyChanged("Word");
+					this.OnWordChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PersianTranslate", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string PersianTranslate
+		{
+			get
+			{
+				return this._PersianTranslate;
+			}
+			set
+			{
+				if ((this._PersianTranslate != value))
+				{
+					this.OnPersianTranslateChanging(value);
+					this.SendPropertyChanging();
+					this._PersianTranslate = value;
+					this.SendPropertyChanged("PersianTranslate");
+					this.OnPersianTranslateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ArabicTranslate", DbType="NVarChar(100) NOT NULL", CanBeNull=false)]
+		public string ArabicTranslate
+		{
+			get
+			{
+				return this._ArabicTranslate;
+			}
+			set
+			{
+				if ((this._ArabicTranslate != value))
+				{
+					this.OnArabicTranslateChanging(value);
+					this.SendPropertyChanging();
+					this._ArabicTranslate = value;
+					this.SendPropertyChanged("ArabicTranslate");
+					this.OnArabicTranslateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Pronounce", DbType="NVarChar(100)")]
+		public string Pronounce
+		{
+			get
+			{
+				return this._Pronounce;
+			}
+			set
+			{
+				if ((this._Pronounce != value))
+				{
+					this.OnPronounceChanging(value);
+					this.SendPropertyChanging();
+					this._Pronounce = value;
+					this.SendPropertyChanged("Pronounce");
+					this.OnPronounceChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PronounceImage", DbType="NVarChar(MAX)")]
+		public string PronounceImage
+		{
+			get
+			{
+				return this._PronounceImage;
+			}
+			set
+			{
+				if ((this._PronounceImage != value))
+				{
+					this.OnPronounceImageChanging(value);
+					this.SendPropertyChanging();
+					this._PronounceImage = value;
+					this.SendPropertyChanged("PronounceImage");
+					this.OnPronounceImageChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Descriptions", DbType="NVarChar(MAX)")]
+		public string Descriptions
+		{
+			get
+			{
+				return this._Descriptions;
+			}
+			set
+			{
+				if ((this._Descriptions != value))
+				{
+					this.OnDescriptionsChanging(value);
+					this.SendPropertyChanging();
+					this._Descriptions = value;
+					this.SendPropertyChanged("Descriptions");
+					this.OnDescriptionsChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
 		}
 	}
 }

@@ -20,7 +20,7 @@ namespace Dictionary_App
         private void btnOk_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form mainFrm = new mainForm();
+            mainForm mainFrm = new mainForm();
             mainFrm.Closed += (s, args) => this.Close();
             mainFrm.Show();
         }

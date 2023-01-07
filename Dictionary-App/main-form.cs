@@ -20,19 +20,19 @@ namespace Dictionary_App
         }
         private void tsbAddNewWord_Click(object sender, EventArgs e)
         {
-            Form addWordFrm = new add_word_form();
+            add_word_form addWordFrm = new add_word_form();
             addWordFrm.ShowDialog();
         }
 
         private void tsbEditWord_Click(object sender, EventArgs e)
         {
-            Form editWordFrm = new edit_word_form();
+            edit_word_form editWordFrm = new edit_word_form();
             editWordFrm.ShowDialog();
         }
 
         private void tsbSearchWord_Click(object sender, EventArgs e)
         {
-            Form searchWordFrm = new search_word_form();
+            search_word_form searchWordFrm = new search_word_form();
             searchWordFrm.ShowDialog();
         }
 

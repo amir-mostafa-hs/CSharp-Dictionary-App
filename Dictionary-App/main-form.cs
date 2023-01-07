@@ -12,8 +12,6 @@ namespace Dictionary_App
 {
     public partial class mainForm : Form
     {
-        dbClassWordTableDataContext wordDatabase = new dbClassWordTableDataContext();
-        WordsTable wordTable = new WordsTable();
         public mainForm()
         {
             InitializeComponent();
@@ -27,6 +25,19 @@ namespace Dictionary_App
         private void tsbEditWord_Click(object sender, EventArgs e)
         {
             edit_word_form editWordFrm = new edit_word_form();
+            var selectedWordData = dataGvAllword.CurrentRow.Cells;
+
+            editWordFrm.txtWord.Text = selectedWordData[1].Value.ToString();
+            editWordFrm.txtPersianTranslate.Text = selectedWordData[2].Value.ToString();
+            editWordFrm.txtArabicTranslate.Text = selectedWordData[3].Value.ToString();
+            editWordFrm.txtPronounce.Text = selectedWordData[4].Value.ToString();
+            editWordFrm.txtDescriptions.Text = selectedWordData[6].Value.ToString();
+
+            if (selectedWordData[5].Value != null)
+            {
+                editWordFrm.picBoxPronounce.Image = Image.FromFile(selectedWordData[5].Value.ToString());
+            }
+
             editWordFrm.ShowDialog();
         }
 
@@ -38,6 +49,7 @@ namespace Dictionary_App
 
         private void mainForm_Load(object sender, EventArgs e)
         {
+            dbClassWordTableDataContext wordDatabase = new dbClassWordTableDataContext();
             dataGvAllword.DataSource = wordDatabase.WordsTables;
         }
 

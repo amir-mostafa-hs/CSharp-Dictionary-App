@@ -45,6 +45,7 @@
             this.btnEditWord = new System.Windows.Forms.Button();
             this.btnAddPronouncePic = new System.Windows.Forms.Button();
             this.picBoxPronounce = new System.Windows.Forms.PictureBox();
+            this.openFileDialogEditImage = new System.Windows.Forms.OpenFileDialog();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -195,6 +196,7 @@
             this.btnEditWord.TabIndex = 9;
             this.btnEditWord.Text = "Edit";
             this.btnEditWord.UseVisualStyleBackColor = true;
+            this.btnEditWord.Click += new System.EventHandler(this.btnEditWord_Click);
             // 
             // btnAddPronouncePic
             // 
@@ -205,6 +207,7 @@
             this.btnAddPronouncePic.TabIndex = 8;
             this.btnAddPronouncePic.Text = "Add Image";
             this.btnAddPronouncePic.UseVisualStyleBackColor = true;
+            this.btnAddPronouncePic.Click += new System.EventHandler(this.btnAddPronouncePic_Click);
             // 
             // picBoxPronounce
             // 
@@ -216,6 +219,10 @@
             this.picBoxPronounce.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxPronounce.TabIndex = 7;
             this.picBoxPronounce.TabStop = false;
+            // 
+            // openFileDialogEditImage
+            // 
+            this.openFileDialogEditImage.FileName = "openFileDialog1";
             // 
             // edit_word_form
             // 
@@ -258,5 +265,6 @@
         public System.Windows.Forms.TextBox txtArabicTranslate;
         public System.Windows.Forms.TextBox txtPersianTranslate;
         public System.Windows.Forms.TextBox txtWord;
+        private System.Windows.Forms.OpenFileDialog openFileDialogEditImage;
     }
 }

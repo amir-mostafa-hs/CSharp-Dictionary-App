@@ -121,6 +121,8 @@
             // 
             // dataGvAllword
             // 
+            this.dataGvAllword.AllowUserToAddRows = false;
+            this.dataGvAllword.AllowUserToDeleteRows = false;
             this.dataGvAllword.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGvAllword.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGvAllword.Location = new System.Drawing.Point(0, 27);
@@ -165,6 +167,6 @@
         private System.Windows.Forms.ToolStripButton tsbSearchWord;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripButton tsbDeleteWord;
-        private System.Windows.Forms.DataGridView dataGvAllword;
+        public System.Windows.Forms.DataGridView dataGvAllword;
     }
 }

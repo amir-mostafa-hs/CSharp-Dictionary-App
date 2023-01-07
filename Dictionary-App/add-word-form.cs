@@ -46,6 +46,15 @@ namespace Dictionary_App
                     wordDatabase.WordsTables.InsertOnSubmit(wordTable);
                     wordDatabase.SubmitChanges();
                     MessageBox.Show("Add new word is successfully", "Adding word result", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    txtWord.Text = "";
+                    txtPersianTranslate.Text = "";
+                    txtArabicTranslate.Text = "";
+                    txtPronounce.Text = "";
+                    txtDescriptions.Text = "";
+
+                    mainForm mainFrm = (mainForm)Application.OpenForms["mainForm"];
+                    mainFrm.dataGvAllword.DataSource = wordDatabase.WordsTables;
                 }
                 catch
                 {

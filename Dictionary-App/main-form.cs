@@ -18,7 +18,6 @@ namespace Dictionary_App
         {
             InitializeComponent();
         }
-
         private void tsbAddNewWord_Click(object sender, EventArgs e)
         {
             Form addWordFrm = new add_word_form();

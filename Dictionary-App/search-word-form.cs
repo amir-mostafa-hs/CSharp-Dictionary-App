@@ -20,7 +20,6 @@ namespace Dictionary_App
         private void btnSearch_Click(object sender, EventArgs e)
         {
             dbClassWordTableDataContext wordDatabase = new dbClassWordTableDataContext();
-            WordsTable wordTable = new WordsTable();
 
             if (txtSearchWord.Text != "" || txtSearchPersian.Text != "" || txtSearchArabic.Text != "")
             {

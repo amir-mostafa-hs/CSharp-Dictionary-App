@@ -40,5 +40,22 @@ namespace Dictionary_App
         {
             dataGvAllword.DataSource = wordDatabase.WordsTables;
         }
+
+        private void tsbDeleteWord_Click(object sender, EventArgs e)
+        {
+            var selectedWordData = (dataGvAllword.CurrentRow.Cells);
+            DialogResult isDeleteWord = MessageBox.Show("Are you sure you want to delete the *(" + selectedWordData[1].Value + ")* with ID *(" + selectedWordData[0].Value + ")* ?", "Delete word data", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (isDeleteWord == DialogResult.Yes)
+            {
+                dbClassWordTableDataContext wordDatabase = new dbClassWordTableDataContext();
+
+                wordDatabase.WordsTables.DeleteOnSubmit((from WordsTable in wordDatabase.WordsTables
+                                                         where WordsTable.WordId == (int)selectedWordData[0].Value
+                                                         select WordsTable).Single());
+                wordDatabase.SubmitChanges();
+                dataGvAllword.DataSource = wordDatabase.WordsTables;
+            }
+        }
     }
 }

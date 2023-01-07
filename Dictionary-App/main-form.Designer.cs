@@ -118,6 +118,7 @@
             this.tsbDeleteWord.Name = "tsbDeleteWord";
             this.tsbDeleteWord.Size = new System.Drawing.Size(96, 24);
             this.tsbDeleteWord.Text = "Delete Word";
+            this.tsbDeleteWord.Click += new System.EventHandler(this.tsbDeleteWord_Click);
             // 
             // dataGvAllword
             // 
